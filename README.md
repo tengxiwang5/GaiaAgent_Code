@@ -138,11 +138,15 @@ python test.py -c config
 
 Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git. Model weights will be provided separately if released.
 
+## 🌍 UrbanChange Raw Data
+
+For access to the original UrbanChange Benchmark data, please contact the authors.
+
+The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
+
 ## 📬 Contact
 
 If you have questions, please open an issue in this repository.
-
-For access to the original UrbanChange Benchmark data, please contact the authors. The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
 
 ## 📝 Citation
 
