@@ -68,13 +68,6 @@ Notes:
 pip install -r requirements.txt
 ```
 
-The MobileSAM checkpoint is not included in this repository. Please place `mobile_sam.pt` in the project root before running:
-
-```text
-GaiaAgent_Code/
-└── mobile_sam.pt
-```
-
 ## 📥 MobileSAM Checkpoint
 
 GaiaAgent uses MobileSAM as the visual foundation model. Please download MobileSAM from the official repository:
