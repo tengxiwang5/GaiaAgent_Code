@@ -33,7 +33,14 @@ Text descriptions are used only during training. Validation and testing use imag
 
 ## 🗂️ UrbanChange Benchmark
 
-UrbanChange Benchmark is designed to support multi-task change detection, including 2D land-cover change detection and 3D height change estimation. Fine-grained change captions are used to align language semantics with visual representations, enhancing the representation capability of GaiaAgent during training. Please organize the dataset as follows:
+UrbanChange Benchmark is designed to support multi-task change detection, including 2D land-cover change detection and 3D height change estimation. Fine-grained change captions are used to align language semantics with visual representations, enhancing the representation capability of GaiaAgent during training.
+
+The UrbanChange Benchmark can be accessed from:
+
+- [Baidu Netdisk](https://pan.baidu.com/s/12RBm3KXh20hz1ydtztvI3Q?pwd=city) password: `city`
+- [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/twang744_connect_hkust-gz_edu_cn/IQDoNHX1W9yYSYSdEjfnCgK0AareTsU6szN2LkhV3T1e66g?e=PUS0OJ)
+
+After downloading, please organize the dataset as follows:
 
 ```text
 data/
