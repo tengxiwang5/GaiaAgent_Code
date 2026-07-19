@@ -13,7 +13,6 @@ prova_3d_dip/
 *.ckpt
 *.onnx
 
-config/config.yaml
 config/*.local.yaml
 
 .DS_Store
