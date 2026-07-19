@@ -39,10 +39,10 @@ data:
   mean: [0.5896145210542503, 0.6210658017517566, 0.591661801751776]
   std: [0.1898555514094201, 0.19114699478664082, 0.21242997453209553]
   train:
-    path: '/mnt/tengxi/SAMChangeDetection/sota/selected_images/train/'
-    text_path: "/mnt/tengxi/SAMChangeDetection/sota/selected_images/train/"
+    path: './train/'
+    text_path: "./train/"
     batch_size: 2
   val:
-    path: '/mnt/tengxi/SAMChangeDetection/sota/selected_images/val/'
+    path: './val/'
   test:
-    path: '/mnt/tengxi/SAMChangeDetection/sota/selected_images/test/' #Ogni volta eliminare i checkpoint
+    path: './test/' #Ogni volta eliminare i checkpoint
