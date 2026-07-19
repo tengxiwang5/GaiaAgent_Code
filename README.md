@@ -30,30 +30,9 @@ We present GaiaAgent, a vision-language framework for comprehensive multi-task l
 
 Text descriptions are used only during training. Validation and testing use image pairs only.
 
-## 📁 Code Structure
+## 🗂️ UrbanChange Benchmark
 
-```text
-GaiaAgent_Code/
-├── models/
-│   ├── GaiaAgent_VLMTool.py
-│   ├── InformationInteraction.py
-│   ├── SemanticPositioning.py
-│   └── ContrastiveLearning.py
-├── config/
-│   ├── config.yaml
-│   └── config.example.yaml
-├── train.py
-├── test.py
-├── dataloader.py
-├── losses.py
-├── optim.py
-├── augmentations.py
-└── utils/
-```
-
-## 🗂️ Dataset Structure
-
-Please organize the dataset as follows:
+UrbanChange Benchmark is designed to support heterogeneous remote sensing data based multi-task change detection and change captioning tasks. Please organize the dataset as follows:
 
 ```text
 data/
@@ -62,7 +41,7 @@ data/
 │   ├── p2/       # post-change images
 │   ├── 2d/       # 2D land-cover change labels
 │   ├── 3d/       # 3D regression labels
-│   └── text/     # text descriptions, training only
+│   └── text/     # change captions, training only
 ├── val/
 │   ├── p1/
 │   ├── p2/
@@ -78,8 +57,9 @@ data/
 Notes:
 
 - File names should be aligned across `p1/`, `p2/`, `2d/`, and `3d/`.
-- The `text/` folder is required only for the training split.
-- Validation and test dataloaders do not load text.
+- Only the training split contains text annotations for change caption supervision.
+- Validation and inference/test splits do not contain or load text annotations.
+- The released training code uses text only for the training dataloader.
 
 ## 🛠️ Installation
 
@@ -167,6 +147,8 @@ Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git.
 ## 📬 Contact
 
 If you have questions, please open an issue in this repository.
+
+For access to the original UrbanChange Benchmark data, please contact the authors. The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
 
 ## 📝 Citation
 
