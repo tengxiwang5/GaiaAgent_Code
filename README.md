@@ -1,26 +1,39 @@
-# GaiaAgent
+# [ISPRS JPRS 2026] Towards Comprehensive Multi-task Land Cover Change Detection Leveraging Vision-Language Model and LLM-driven Agents
 
-Official implementation of the ISPRS Journal of Photogrammetry and Remote Sensing paper:
+Official implementation of:
 
-**GaiaAgent: A Vision-Language Agent for Change Detection**
+**Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents**
 
-> Paper link, DOI, and citation will be updated after publication.
+Tengxi Wang, Yiru Wang, Shuai Zhang, Yuxuan Liang, and Wufan Zhao
+
+ISPRS Journal of Photogrammetry and Remote Sensing, Volume 238, 2026, Pages 756-774
+
+[[Paper]](https://doi.org/10.1016/j.isprsjprs.2026.05.025) [[ScienceDirect]](https://www.sciencedirect.com/science/article/pii/S0924271626002662)
+
+---
+
+## NEWS
+
+- [2026.07] We release the code of GaiaAgent for multi-task land cover change detection.
+- [2026.05] The paper was published in ISPRS Journal of Photogrammetry and Remote Sensing.
+
+---
 
 ## Overview
 
-GaiaAgent is a vision-language change detection framework. The current implementation contains:
+We present GaiaAgent, a vision-language framework for comprehensive multi-task land cover change detection. The released implementation includes the following core modules:
 
-- `GaiaAgent_VLMTool`: the main change detection model.
-- `InformationInteraction`: cross-temporal feature interaction.
-- `SemanticPositioning`: adaptive semantic positioning with learnable positional encoding and Transformer encoding.
+- `GaiaAgent_VLMTool`: the main model for multi-task land cover change detection.
+- `InformationInteraction`: cross-temporal feature interaction between bi-temporal observations.
+- `SemanticPositioning`: semantic positioning with adaptive positional encoding and Transformer encoding.
 - `ContrastiveLearning`: text-image contrastive learning used during training.
 
 Text descriptions are used only during training. Validation and testing use image pairs only.
 
-## Repository
+## Code Structure
 
 ```text
-.
+GaiaAgent_Code/
 ├── models/
 │   ├── GaiaAgent_VLMTool.py
 │   ├── InformationInteraction.py
@@ -34,31 +47,22 @@ Text descriptions are used only during training. Validation and testing use imag
 ├── dataloader.py
 ├── losses.py
 ├── optim.py
+├── augmentations.py
 └── utils/
 ```
 
-## Installation
+## Dataset Structure
 
-Create an environment and install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-This repository does not include the MobileSAM checkpoint. Please place `mobile_sam.pt` in the project root before running the code.
-
-## Data
-
-The expected dataset structure is:
+Please organize the dataset as follows:
 
 ```text
 data/
 ├── train/
-│   ├── p1/
-│   ├── p2/
-│   ├── 2d/
-│   ├── 3d/
-│   └── text/
+│   ├── p1/       # pre-change images
+│   ├── p2/       # post-change images
+│   ├── 2d/       # 2D land-cover change labels
+│   ├── 3d/       # 3D regression labels
+│   └── text/     # text descriptions, training only
 ├── val/
 │   ├── p1/
 │   ├── p2/
@@ -71,24 +75,44 @@ data/
     └── 3d/
 ```
 
-Only the training split requires the `text/` folder.
+Notes:
+
+- File names should be aligned across `p1/`, `p2/`, `2d/`, and `3d/`.
+- The `text/` folder is required only for the training split.
+- Validation and test dataloaders do not load text.
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+The MobileSAM checkpoint is not included in this repository. Please place `mobile_sam.pt` in the project root before running:
+
+```text
+GaiaAgent_Code/
+└── mobile_sam.pt
+```
 
 ## Configuration
 
-Edit [config/config.yaml](config/config.yaml) before running:
+Edit [config/config.yaml](config/config.yaml) before running.
+
+Example:
 
 ```yaml
 data:
   train:
     path: '/path/to/train/'
     text_path: '/path/to/train/'
+    batch_size: 2
   val:
     path: '/path/to/val/'
   test:
     path: '/path/to/test/'
 ```
 
-The 2D focal loss is controlled from the config:
+The 2D focal loss is controlled by:
 
 ```yaml
 model:
@@ -118,22 +142,26 @@ python test.py -c config
 
 ## Checkpoints
 
-Large files such as `*.pth` and `mobile_sam.pt` are not tracked in git. If checkpoints are released, they will be provided separately.
+Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git. Model weights will be provided separately if released.
+
+## Contact
+
+If you have questions, please open an issue in this repository.
 
 ## Citation
 
-If you use this code, please cite our paper:
+If you find this code useful, please cite our paper:
 
 ```bibtex
-@article{wang2026gaiaagent,
-  title   = {GaiaAgent: A Vision-Language Agent for Change Detection},
-  author  = {TBD},
+@article{WANG2026756,
+  title = {Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents},
   journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
-  year    = {2026},
-  doi     = {TBD}
+  volume = {238},
+  pages = {756-774},
+  year = {2026},
+  issn = {0924-2716},
+  doi = {https://doi.org/10.1016/j.isprsjprs.2026.05.025},
+  url = {https://www.sciencedirect.com/science/article/pii/S0924271626002662},
+  author = {Tengxi Wang and Yiru Wang and Shuai Zhang and Yuxuan Liang and Wufan Zhao}
 }
 ```
-
-## License
-
-The license will be updated before the final public release.
