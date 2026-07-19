@@ -136,7 +136,11 @@ python test.py -c config
 
 ## 📦 Checkpoints
 
-Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git. Model weights will be provided separately if released.
+The GaiaAgent checkpoint on UrbanChange Benchmark is available at:
+
+- [Baidu Netdisk](https://pan.baidu.com/s/18ZitKwBrkOk81RGjWrTMkA?pwd=city) password: `city`
+
+Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git.
 
 ## 🌍 UrbanChange Raw Data
 
