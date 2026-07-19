@@ -137,6 +137,7 @@ python test.py -c config
 The GaiaAgent checkpoint on UrbanChange Benchmark is available at:
 
 - [Baidu Netdisk](https://pan.baidu.com/s/18ZitKwBrkOk81RGjWrTMkA?pwd=city) password: `city`
+- [Google Drive](https://drive.google.com/file/d/1AE9dmTUX5_Ws7PqBzQjlYhM6bD638YRy/view?usp=sharing)
 
 Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git.
 
