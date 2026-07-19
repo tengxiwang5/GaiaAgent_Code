@@ -150,7 +150,9 @@ Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git.
 
 ## 🌍 UrbanChange Raw Data
 
-For access to the original UrbanChange Benchmark data, please contact the authors.
+To improve data availability, we further provide the complete city-wise UrbanChange data, including text annotations:
+
+- [Baidu Netdisk](https://pan.baidu.com/s/1zL6xgFkZXv_EZibafJsP6g?pwd=city) password: `city`
 
 The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
 
