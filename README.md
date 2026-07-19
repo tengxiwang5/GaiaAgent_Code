@@ -33,7 +33,7 @@ Text descriptions are used only during training. Validation and testing use imag
 
 ## 🗂️ UrbanChange Benchmark
 
-UrbanChange Benchmark is designed to support heterogeneous remote sensing data based multi-task change detection and change captioning tasks. Please organize the dataset as follows:
+UrbanChange Benchmark is designed to support multi-task change detection, including 2D land-cover change detection and 3D height change estimation. Fine-grained change captions are used to align language semantics with visual representations, enhancing the representation capability of GaiaAgent during training. Please organize the dataset as follows:
 
 ```text
 data/
@@ -58,7 +58,7 @@ data/
 Notes:
 
 - File names should be aligned across `p1/`, `p2/`, `2d/`, and `3d/`.
-- Validation and inference/test splits do not contain or load change caption.
+- Validation and inference/test splits do not contain or load change captions.
 
 ## 🛠️ Installation
 
