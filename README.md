@@ -94,6 +94,26 @@ GaiaAgent_Code/
 └── mobile_sam.pt
 ```
 
+## 📥 MobileSAM Checkpoint
+
+GaiaAgent uses MobileSAM as the visual foundation model. Please download MobileSAM from the official repository:
+
+- [ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+- [MobileSAM weights folder](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights)
+
+After downloading, place the checkpoint in this repository root:
+
+```text
+GaiaAgent_Code/
+└── mobile_sam.pt
+```
+
+You can also install MobileSAM following the official instruction:
+
+```bash
+pip install git+https://github.com/ChaoningZhang/MobileSAM.git
+```
+
 ## ⚙️ Configuration
 
 Edit [config/config.yaml](config/config.yaml) before running.
