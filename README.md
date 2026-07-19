@@ -1,4 +1,4 @@
-# [ISPRS JPRS 2026] Towards Comprehensive Multi-task Land Cover Change Detection Leveraging Vision-Language Model and LLM-driven Agents
+# 🎉 [ISPRS JPRS 2026] Towards Comprehensive Multi-task Land Cover Change Detection Leveraging Vision-Language Model and LLM-driven Agents
 
 Official implementation of:
 
@@ -12,14 +12,14 @@ ISPRS Journal of Photogrammetry and Remote Sensing, Volume 238, 2026, Pages 756-
 
 ---
 
-## NEWS
+## 🔥 NEWS
 
 - [2026.07] We release the code of GaiaAgent for multi-task land cover change detection.
 - [2026.05] The paper was published in ISPRS Journal of Photogrammetry and Remote Sensing.
 
 ---
 
-## Overview
+## ✨ Overview
 
 We present GaiaAgent, a vision-language framework for comprehensive multi-task land cover change detection. The released implementation includes the following core modules:
 
@@ -30,7 +30,7 @@ We present GaiaAgent, a vision-language framework for comprehensive multi-task l
 
 Text descriptions are used only during training. Validation and testing use image pairs only.
 
-## Code Structure
+## 📁 Code Structure
 
 ```text
 GaiaAgent_Code/
@@ -51,7 +51,7 @@ GaiaAgent_Code/
 └── utils/
 ```
 
-## Dataset Structure
+## 🗂️ Dataset Structure
 
 Please organize the dataset as follows:
 
@@ -81,7 +81,7 @@ Notes:
 - The `text/` folder is required only for the training split.
 - Validation and test dataloaders do not load text.
 
-## Installation
+## 🛠️ Installation
 
 ```bash
 pip install -r requirements.txt
@@ -94,7 +94,7 @@ GaiaAgent_Code/
 └── mobile_sam.pt
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 Edit [config/config.yaml](config/config.yaml) before running.
 
@@ -122,7 +122,7 @@ model:
   focal_gamma: 2
 ```
 
-## Training
+## 🚀 Training
 
 ```bash
 python train.py -c config
@@ -134,21 +134,21 @@ Checkpoints and logs are saved under:
 results/config/
 ```
 
-## Testing
+## 🧪 Testing
 
 ```bash
 python test.py -c config
 ```
 
-## Checkpoints
+## 📦 Checkpoints
 
 Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git. Model weights will be provided separately if released.
 
-## Contact
+## 📬 Contact
 
 If you have questions, please open an issue in this repository.
 
-## Citation
+## 📝 Citation
 
 If you find this code useful, please cite our paper:
 
