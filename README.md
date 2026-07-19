@@ -58,9 +58,7 @@ data/
 Notes:
 
 - File names should be aligned across `p1/`, `p2/`, `2d/`, and `3d/`.
-- Only the training split contains text annotations for change caption supervision.
-- Validation and inference/test splits do not contain or load text annotations.
-- The released training code uses text only for the training dataloader.
+- Validation and inference/test splits do not contain or load change caption.
 
 ## 🛠️ Installation
 
