@@ -14,8 +14,9 @@ ISPRS Journal of Photogrammetry and Remote Sensing, Volume 238, 2026, Pages 756-
 
 ## 🔥 NEWS
 
-- [2026.07] We release the code of GaiaAgent for multi-task land cover change detection.
-- [2026.05] The paper was published in ISPRS Journal of Photogrammetry and Remote Sensing.
+- ✅ [2026.07] We released the code of GaiaAgent for multi-task land cover change detection.
+- ✅ [2026.05] The paper was published in ISPRS Journal of Photogrammetry and Remote Sensing.
+- 🔜 Agent interaction code will be released soon.
 
 ---
 
