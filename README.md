@@ -157,6 +157,17 @@ To improve data availability, we further provide the complete city-wise UrbanCha
 
 The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
 
+The 2D change classes are defined as:
+
+| Class ID | Change Type |
+| --- | --- |
+| 1 | Non-developed area -> Building |
+| 2 | Non-developed area -> Vegetation |
+| 3 | Vegetation -> Building |
+| 4 | Vegetation -> Non-developed area |
+| 5 | Building -> Vegetation |
+| 6 | Building -> Non-developed area |
+
 ## 📬 Contact
 
 If you have questions, please open an issue in this repository.
