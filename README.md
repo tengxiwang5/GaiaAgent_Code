@@ -70,6 +70,8 @@ Notes:
 ## 🛠️ Installation
 
 ```bash
+git clone https://github.com/tengxiwang5/GaiaAgent_Code.git
+cd GaiaAgent_Code
 pip install -r requirements.txt
 ```
 
