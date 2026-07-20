@@ -153,6 +153,7 @@ Large files such as `*.pth`, `*.pt`, and `mobile_sam.pt` are not tracked in git.
 To improve data availability, we further provide the complete city-wise UrbanChange data, including text annotations:
 
 - [Baidu Netdisk](https://pan.baidu.com/s/1zL6xgFkZXv_EZibafJsP6g?pwd=city) password: `city`
+- [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/twang744_connect_hkust-gz_edu_cn/IQBsinGHhDoYQopbqn5iZr5cAfoye6oU2rHr-AC-5pMpU5o?e=cOesJj)
 
 The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
 
