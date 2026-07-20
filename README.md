@@ -155,7 +155,10 @@ To improve data availability, we further provide the complete city-wise UrbanCha
 - [Baidu Netdisk](https://pan.baidu.com/s/1zL6xgFkZXv_EZibafJsP6g?pwd=city) password: `city`
 - [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/twang744_connect_hkust-gz_edu_cn/IQBsinGHhDoYQopbqn5iZr5cAfoye6oU2rHr-AC-5pMpU5o?e=cOesJj)
 
-The dataset is intended to support heterogeneous remote sensing data multi-task change detection and change captioning research.
+The dataset is intended to support heterogeneous remote sensing data multi-task change detection.
+
+- [Baidu Netdisk](https://pan.baidu.com/s/1e7ciKUb0SlfKkluAtvmKFw?pwd=city) password: `city`
+- [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/twang744_connect_hkust-gz_edu_cn/IQARBnL9KN_jRqI6O-WK_hIFAToZSJ5M1zs_WMcSlWWmqiI?e=luTN8x)
 
 The 2D change classes are defined as:
 
