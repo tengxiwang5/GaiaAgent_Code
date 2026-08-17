@@ -31,6 +31,12 @@ We present GaiaAgent, a vision-language framework for comprehensive multi-task l
 
 Text descriptions are used only during training. Validation and testing use image pairs only.
 
+## 🤖 Multi-Agent Analysis Framework Demonstration
+
+We selected bi-temporal remote sensing imagery acquired in 2016 and 2022 for the area surrounding the Dandora dumpsite and applied the GaiaAgent multi-agent intelligent analysis framework to identify and compare land-cover changes. The analysis reveals substantial changes in the land-cover pattern between 2016 and 2022, together with adverse impacts on the surrounding ecological environment.
+
+🎬 [Watch the Dandora land-cover change analysis demonstration](8ca40cff8fe65f1a55ade45ffb369ccf_raw.mp4)
+
 ## 🗂️ UrbanChange Benchmark
 
 UrbanChange Benchmark is designed to support multi-task change detection, including 2D land-cover change detection and 3D height change estimation. Fine-grained change captions are used to align language semantics with visual representations, enhancing the representation capability of GaiaAgent during training.
